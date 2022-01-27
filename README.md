@@ -31,6 +31,10 @@ git config --global --unset http.https://github.com.proxy
 ```
 
 Or edit `C:\Users\${YOUR_USER}\.gitconfig` on Windows, `~/.gitconfig` on macOS or Linux manually
+```
+[http "https://github.com"]
+        proxy = http://172.16.0.33:1080
+```
 
 ## NPM ([Doc](https://docs.npmjs.com/cli/v7/using-npm/config#https-proxy))
 Usage: For `npm install` to download packages from NPM registry.
@@ -48,3 +52,8 @@ npm config rm proxy
 ```
 
 Or edit `C:\Users\${YOUR_USER}\.npmrc` on Windows, `~/.npmrc` on macOS or Linux manually
+```
+https-proxy=http://172.16.0.33:1080/
+proxy=http://172.16.0.33:1080/
+noproxy=npm.neulion.net.cn
+```
