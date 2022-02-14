@@ -57,3 +57,9 @@ https-proxy=http://172.16.0.33:1080/
 proxy=http://172.16.0.33:1080/
 noproxy=npm.neulion.net.cn
 ```
+
+## Mac Terminal
+```
+export https_proxy="http://172.16.0.33:1080"
+```
+Only affect current window
